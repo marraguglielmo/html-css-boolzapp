@@ -183,7 +183,6 @@ aside .contact-search{
 }
 
 
-/* TODO: INPUT ON FOCUS */
 .contact-search .search input[type="text"]{
     font-family: 'lato', sans-serif;
     padding: 10px 20px 10px 0;
@@ -192,6 +191,10 @@ aside .contact-search{
     color: var(--txt-gray);
     font-weight: bold;
     font-size: 1rem;
+}
+
+.contact-search .search input[type="text"]:focus{
+    color: black;
 }
 
 .contact-search a{
@@ -272,7 +275,7 @@ aside .chat-list{
     background-image: url(../img/mine.jpg);
     height: calc(100% - 160px);
     overflow: scroll;
-    padding: 100px;
+    padding: 30px 100px;
 }
 
 .chat-box .baloon-box{
@@ -312,9 +315,73 @@ aside .chat-list{
     right: 15px;
 }
 
+.baloon-box .baloon span:first-child:hover{
+    cursor: pointer;
+}
 
+
+
+/* ** MENU TENDINA ** */
+.baloon .box-h{
+    position: relative;
+}
+
+.baloon .box-h .menu-h{
+    display: none;
+    background: var(--bg-grey);
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    width: 150px;
+    height:90px;
+    top: 15px;
+    right: 20px;
+    font-size: 1.1rem;
+}
+
+.baloon-box .baloon .box-h:hover .menu-h{
+    display: inline-block;
+}
+
+.baloon .box-h .menu-h div:hover{
+    cursor: pointer;
+    background-color: grey;
+}
+
+.baloon .box-h .menu-h div{
+    padding: 10px;
+    height: 50%;
+}
+
+
+
+/* main input */
 .main-box .main-input{
+    background-color: #F1EDEA;
     height: 80px;
+    padding: 10px 25px;
+}
+
+.main-input i{
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.596);
+}
+
+.main-input i:hover{
+    cursor: pointer;
+    color: grey;
+}
+
+.main-box .main-input input[type="text"]{
+    width: 85%;
+    padding: 18px 10px;
+    border: none;
+    border-radius: 5px;
+    color: var(--txt-gray);
+}
+
+.main-box .main-input input[type="text"]:focus{
+    color: black;
 }
 
 
@@ -332,8 +399,6 @@ aside .chat-list{
 
 @media screen and (max-width: 992px) {
 
-    body{
-        background-color: black;
-    }
+    
     
 }
