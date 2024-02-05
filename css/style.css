@@ -71,6 +71,10 @@ aside .contact-search{
 }
 
 
+aside .chat-list{
+    height: calc(100% - 240px);
+    overflow: scroll;
+}
 
 
 /* main box */
