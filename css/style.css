@@ -25,7 +25,7 @@ img{
 }
 
 h2{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 main{
@@ -123,7 +123,7 @@ aside .account{
 }
 
 .account .icons a:hover{
-    filter: brightness(.8);
+    color: rgb(85, 84, 84);
 }
 
 /* notifications */
@@ -220,7 +220,7 @@ aside .chat-list{
 
 .chat-list .card p{
     color: var(--txt-gray);
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .chat-list .card .time{
@@ -240,7 +240,28 @@ aside .chat-list{
 
 .main-box .main-account{
     height: 80px;
+    padding: 15px 20px;
 }
+
+.main-account .card p{
+    color: rgba(0, 0, 0, 0.551);
+    font-weight: bold;
+}
+
+.main-account  .icons{
+    width: 100px;
+    font-size: 1.5rem;
+}
+
+.main-account  a{
+    color: var(--txt-gray);
+}
+
+.main-account .icons a:hover{
+    color: rgb(85, 84, 84);
+}
+
+
 
 .main-box .chat-box{
     background-image: url(../img/mine.jpg);
