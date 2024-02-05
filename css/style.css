@@ -1,0 +1,41 @@
+:root{
+    --bg-green: #519287;
+    --bg-grey: #D9DAD3;
+    --grey: #E9E9E9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    /* background-image: linear-gradient(#519287 20%, #E9E9E9 80%); */
+}
+
+.container{
+    width: 80vw;
+    height: 95vh;
+}
+
+main{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* utils */
+.debug{
+    background-color: green;
+    border: 1px solid black;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.m-auto{
+    margin: 0 auto;
+}
