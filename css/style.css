@@ -15,15 +15,25 @@ body{
     /* background-image: linear-gradient(#519287 20%, #E9E9E9 80%); */
 }
 
-.container{
-    width: 80vw;
-    height: 95vh;
-}
-
 main{
     height: 100vh;
     justify-content: center;
     align-items: center;
+}
+
+.container{
+    width: 80vw;
+    height: 95vh;
+    flex-flow: row nowrap;
+}
+
+aside{
+    width: 480px;
+    height: 100%;
+}
+
+.main-box{
+    width: 100%;
 }
 
 /* utils */
@@ -38,4 +48,33 @@ main{
 
 .m-auto{
     margin: 0 auto;
+}
+
+.jc-between{
+    justify-content: space-between;
+}
+
+
+/* main */
+
+/* aside */
+aside .account{
+    height: 80px;
+}
+
+aside .notifications{
+    height: 100px;
+}
+
+aside .contact-search{
+    height: 60px;
+}
+
+
+
+
+/* main box */
+
+.main-box .main-account{
+    height: 80px;
 }
