@@ -2,7 +2,7 @@
     --bg-green: #519287;
     --bg-grey: #E9E9E9;
     --bg-input-msg: #D9DAD3;
-    --txt-gray: #AFAFAF;
+    --txt-gray: #5e5d5d;
     --bg-notifications: #A7D7F8;
 }
 
@@ -21,6 +21,10 @@ img{
     max-width: 100%;
 }
 
+h2{
+    font-size: 1.3rem;
+}
+
 main{
     height: 100vh;
     justify-content: center;
@@ -34,7 +38,7 @@ main{
 }
 
 aside{
-    width: 450px;
+    width: 420px;
     height: 100%;
 }
 
@@ -43,7 +47,7 @@ aside > *{
 }
 
 .main-box{
-    width: calc(100% - 450px)
+    width: calc(100% - 420px)
 }
 
 .avatar{
@@ -68,13 +72,21 @@ aside > *{
     margin: 0 auto;
 }
 
-/* margin left small */
-.ml-sm{
+/* padding left small */
+.pl-sm{
     margin-left: 10px;
+}
+
+.pl-md{
+    padding-left: 20px;
 }
 
 .jc-center{
     justify-content: center;
+}
+
+.jc-start{
+    justify-content: flex-start;
 }
 
 .ai-center{
@@ -144,6 +156,36 @@ aside .notifications .alert-icon{
 /* contact search */
 aside .contact-search{
     height: 60px;
+    padding: 0;
+}
+
+.contact-search .search{
+    width: 440px;
+    height: 40px;
+    border-radius: 3px;
+}
+
+.contact-search .search .icon-search{
+    background-color: white;
+    height: 40px;
+    padding: 10px 20px;
+}
+
+.contact-search .search input[type="text"]{
+    font-family: 'lato', sans-serif;
+    padding: 10px 20px 10px 0;
+    width: 380px;
+    height: 40px;
+    border: none;
+    color: var(--txt-gray);
+}
+
+
+
+
+
+.contact-search a{
+    color: var(--txt-gray);
 }
 
 
@@ -151,6 +193,12 @@ aside .contact-search{
 aside .chat-list{
     height: calc(100% - 240px);
     overflow: scroll;
+    padding: 0;
+}
+
+.chat-list .card{
+    height: 80px;
+    width: 100%;
 }
 
 
