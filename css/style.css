@@ -2,7 +2,7 @@
     --bg-green: #519287;
     --bg-grey: #E9E9E9;
     --bg-input-msg: #D9DAD3;
-    --txt-gray: #5e5d5d;
+    --txt-gray: #1313136c;
     --bg-notifications: #A7D7F8;
 }
 
@@ -171,6 +171,8 @@ aside .contact-search{
     padding: 10px 20px;
 }
 
+
+/* TODO: INPUT ON FOCUS */
 .contact-search .search input[type="text"]{
     font-family: 'lato', sans-serif;
     padding: 10px 20px 10px 0;
@@ -178,17 +180,14 @@ aside .contact-search{
     height: 40px;
     border: none;
     color: var(--txt-gray);
+    font-weight: bold;
 }
-
-
-
-
 
 .contact-search a{
     color: var(--txt-gray);
 }
 
-
+/* TODO: BORDER GREY */
 /* chat list */
 aside .chat-list{
     height: calc(100% - 240px);
@@ -197,8 +196,34 @@ aside .chat-list{
 }
 
 .chat-list .card{
-    height: 80px;
+    position: relative;
+    height: 100px;
     width: 100%;
+    padding: 10px;
+    background: white;
+}
+
+.chat-list .card:hover{
+    cursor: pointer;
+    filter: brightness(.9);
+}
+
+.chat-list .card:not(:last-child){
+    border-bottom: 1px solid var(--bg-grey);
+}
+
+.chat-list .card p{
+    color: var(--txt-gray);
+    font-weight: 600;
+}
+
+.chat-list .card .time{
+    position: absolute;
+    top: 27px;
+    right: 20px;
+    font-size: .85rem;
+    color: var(--txt-gray);
+    font-weight: bold;
 }
 
 
