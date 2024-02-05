@@ -1,6 +1,8 @@
 :root{
     --bg-green: #519287;
-    --bg-grey: #E9E9E9;
+    --bg-grey: #DADAD3;
+    --grey-section: #E9E9E9;
+    --bg-input-list: #FAFAFA;
     --bg-input-msg: #D9DAD3;
     --txt-gray: #1313136c;
     --bg-notifications: #A7D7F8;
@@ -14,6 +16,7 @@
 
 body{
     font-family: 'Lato', sans-serif;
+    background-color: var(--bg-grey);
     /* background-image: linear-gradient(#519287 20%, #E9E9E9 80%); */
 }
 
@@ -98,7 +101,7 @@ aside > *{
 }
 
 .bg-grey{
-    background-color: var(--bg-grey);
+    background-color: var(--grey-section);
 }
 
 /* main */
@@ -155,19 +158,22 @@ aside .notifications .alert-icon{
 
 /* contact search */
 aside .contact-search{
+    background-color: var(--bg-input-list);
     height: 60px;
     padding: 0;
 }
 
 .contact-search .search{
-    width: 440px;
-    height: 40px;
+    flex-direction: row;
+    width: 410px;
+    border: 1px solid var(--bg-grey);
     border-radius: 3px;
+    padding: .8px;
 }
 
 .contact-search .search .icon-search{
     background-color: white;
-    height: 40px;
+    width: 15%;
     padding: 10px 20px;
 }
 
@@ -176,11 +182,11 @@ aside .contact-search{
 .contact-search .search input[type="text"]{
     font-family: 'lato', sans-serif;
     padding: 10px 20px 10px 0;
-    width: 380px;
-    height: 40px;
+    width: 85%;
     border: none;
     color: var(--txt-gray);
     font-weight: bold;
+    font-size: 1rem;
 }
 
 .contact-search a{
@@ -237,8 +243,8 @@ aside .chat-list{
 }
 
 .main-box .chat-box{
+    background-image: url(../img/mine.jpg);
     height: calc(100% - 160px);
-    background: rgba(255, 0, 0, 0.678);
     overflow: scroll;
 }
 
