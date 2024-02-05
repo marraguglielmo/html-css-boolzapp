@@ -78,7 +78,20 @@ aside .chat-list{
 
 
 /* main box */
+.main-box{
+    flex-direction: column;
+}
 
 .main-box .main-account{
+    height: 80px;
+}
+
+.main-box .chat-box{
+    height: calc(100% - 160px);
+    background: rgba(255, 0, 0, 0.678);
+    overflow: scroll;
+}
+
+.main-box .main-input{
     height: 80px;
 }
