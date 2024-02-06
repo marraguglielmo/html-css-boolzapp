@@ -225,7 +225,7 @@ aside .chat-list{
 }
 
 .chat-list .card:not(:last-child){
-    border-bottom: 1px solid var(--bg-grey);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.1)
 }
 
 .chat-list .card p{
@@ -406,8 +406,36 @@ aside .chat-list{
 
 @media screen and (max-width: 992px) {
 
-    aside{
+    aside
+    .notifications,
+    .contact-search{
         display: none;
+    }
+
+    aside 
+    .account,
+    .chat-list{
+        width: 100px;
+    }
+
+    aside .account{
+        border-right: 1px solid rgba(128, 128, 128, 0.2);
+    }
+
+    aside .account .icons{
+        display: none;
+    }
+
+    .chat-list .card .card-txt,.time{
+        display: none;
+    }
+
+    aside .chat-list{
+        height: calc(100% - 80px);
+    }
+
+    .chat-list .card{
+        justify-content: center;
     }
     
 }
