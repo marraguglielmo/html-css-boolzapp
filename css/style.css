@@ -18,7 +18,7 @@
 body{
     font-family: 'Lato', sans-serif;
     background-color: var(--bg-grey);
-    background-image: linear-gradient(to bottom,#519287 20%,#DADAD3 80px);
+    background-image: linear-gradient(to bottom,#519287 20vh,#DADAD3 20vh);
 }
 
 img{
@@ -30,14 +30,15 @@ h2{
 }
 
 main{
+    width: 100%;
     height: 100vh;
     justify-content: center;
     align-items: center;
 }
 
 .container{
-    width: 80vw;
-    height: 95vh;
+    width: 80%;
+    height: 95%;
     flex-flow: row nowrap;
 }
 
@@ -274,7 +275,8 @@ aside .chat-list{
 .main-box .chat-box{
     background-image: url(../img/mine.jpg);
     height: calc(100% - 160px);
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
     padding: 30px 100px;
 }
 
@@ -285,7 +287,7 @@ aside .chat-list{
 
 .chat-box .baloon-box .baloon{
     position: relative;
-    padding: 15px 20px 40px 15px;
+    padding: 15px 25px 40px 15px;
     color: black;
     border-radius: 15px;
     margin-bottom: 10px;
@@ -310,45 +312,48 @@ aside .chat-list{
     font-weight: bold;
 }
 
-.chat-box .baloon-box .baloon span:first-child{
+.chat-box .baloon-box .baloon i{
     position: absolute;
-    right: 15px;
+    right: 10px;
 }
 
-.baloon-box .baloon span:first-child:hover{
+.baloon-box .baloon i:hover{
     cursor: pointer;
 }
 
 
 
 /* ** MENU TENDINA ** */
-.baloon .box-h{
-    position: relative;
-}
 
-.baloon .box-h .menu-h{
+.baloon .menu-h{
     display: none;
-    background: var(--bg-grey);
+    background: white;
     flex-direction: column;
     justify-content: space-around;
     position: absolute;
     width: 150px;
     height:90px;
     top: 15px;
-    right: 20px;
+    right: -10px;
     font-size: 1.1rem;
+    border-radius: 7px;
 }
 
-.baloon-box .baloon .box-h:hover .menu-h{
+.baloon .box-h{
+    position: relative;
+}
+
+
+.baloon-box .baloon div:hover .menu-h{
     display: inline-block;
 }
 
-.baloon .box-h .menu-h div:hover{
+.baloon .menu-h div:hover{
     cursor: pointer;
-    background-color: grey;
+    background-color: var(--grey-section);
 }
 
-.baloon .box-h .menu-h div{
+.baloon .menu-h div{
     padding: 10px;
     height: 50%;
 }
