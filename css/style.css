@@ -52,7 +52,8 @@ aside > *{
 }
 
 .main-box{
-    width: calc(100% - 420px)
+    flex-grow: 1;
+    /* width: calc(100% - 420px); */
 }
 
 .avatar{
@@ -291,6 +292,7 @@ aside .chat-list{
     color: black;
     border-radius: 15px;
     margin-bottom: 10px;
+    word-wrap: break-word;
 }
 
 .baloon-box .received{
@@ -404,6 +406,8 @@ aside .chat-list{
 
 @media screen and (max-width: 992px) {
 
-    
+    aside{
+        display: none;
+    }
     
 }
