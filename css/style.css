@@ -203,7 +203,6 @@ aside .contact-search{
     color: var(--txt-gray);
 }
 
-/* TODO: BORDER GREY */
 /* chat list */
 aside .chat-list{
     height: calc(100% - 240px);
@@ -251,6 +250,11 @@ aside .chat-list{
 .main-box .main-account{
     height: 80px;
     padding: 15px 20px;
+}
+
+/* FIXME: larghezza avatar main account */
+.main-account .card .card-img{
+    min-width: 60px;
 }
 
 .main-account .card p{
@@ -338,6 +342,7 @@ aside .chat-list{
     right: -10px;
     font-size: 1.1rem;
     border-radius: 7px;
+    z-index: 999;
 }
 
 .baloon .box-h{
